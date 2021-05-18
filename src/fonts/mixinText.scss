@@ -1,0 +1,44 @@
+@import "@/fonts/mixinFonts.scss";
+
+// Desktop
+@mixin Desktop-h1 {
+  @include MontserratBold(56px, 68px);
+}
+
+@mixin Desktop-h2 {
+  @include MontserratBold(36px, 44px);
+}
+
+@mixin Desktop-h3 {
+  @include MontserratBold(24px, 30px);
+}
+
+@mixin Desktop-h4 {
+  @include MontserratBold(18px, 22px);
+}
+
+@mixin Desktop-h5 {
+  @include MontserratBold(14px, 18px);
+}
+
+
+@mixin Desktop-Body1 {
+  @include MontserratNormal(28px, 34px);
+}
+
+@mixin Desktop-Body2 {
+  @include MontserratNormal(16px, 20px);
+}
+
+@mixin Desktop-Body3 {
+  @include MontserratNormal(14px, 18px);
+}
+
+@mixin Desktop-Body4 {
+  @include MontserratNormal(12px, 16px);
+}
+
+
+@mixin Desktop-Button {
+  @include MontserratBold(16px, 20px);
+}
