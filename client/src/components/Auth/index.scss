@@ -1,0 +1,15 @@
+.register-form label:not(:last-child) {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.register-form label div {
+  margin-right: 10px;
+}
+
+
+.auth-buttons {
+  display: flex;
+  margin: 10px;
+}

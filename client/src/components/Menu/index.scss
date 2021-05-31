@@ -1,0 +1,68 @@
+@import '@/fonts/mixinFonts.scss';
+@import '@/styles/varColors.scss';
+@import '@/styles/varStyles.scss';
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $ocean;
+
+  margin: 0 -15px;
+  padding: 15px;
+}
+
+.menu__createBtn {
+  @include MontserratBold(1.2rem, 1.2rem);
+  color: $black;
+  display: flex;
+  align-items: center;
+}
+
+.menu__createBtn span{
+  color: $black;
+  margin-left: 8px;
+}
+
+.menu__user {
+  color: $white;
+  @include MontserratBold(1.2rem, 1.2rem);
+  display: flex;
+  align-items: center;
+}
+
+.menu__user span {
+  color: $white;
+  margin-right: 8px;
+}
+
+
+.todo__form-create {
+  background-color: $sky;
+  border-radius: $borderRadius;
+  width: 280px;
+  padding: 15px;
+  position: absolute;
+  z-index: 666;
+
+  display: none;
+}
+
+.todo__form-create div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form-edit-create-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-edit-create-close span {
+  color: $black;
+}
+
+.form-edit-create-close {
+  cursor: pointer;
+  user-select: none;
+}

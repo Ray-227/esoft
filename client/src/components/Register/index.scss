@@ -1,0 +1,10 @@
+.register-form > div:not(:last-child) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.register-form > div > label {
+  margin-right: 10px;
+}

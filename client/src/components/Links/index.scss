@@ -1,0 +1,18 @@
+@import '@/styles/varColors.scss';
+@import '@/styles/varStyles.scss';
+
+.link-form {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10px;
+}
+
+.link-form a {
+  text-decoration: none;
+  background-color: $black;
+  color: $white;
+  border-radius: $borderRadius;
+  padding: 5px 10px;
+  margin: 5px;
+}

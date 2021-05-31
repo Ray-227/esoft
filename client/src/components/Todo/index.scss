@@ -1,0 +1,203 @@
+@import "/styles/varStyles.scss";
+@import "/styles/varColors.scss";
+@import "/fonts/mixinFonts.scss";
+
+.todo {
+  padding: 10px 15px;
+  border-radius: $borderRadius;
+  border: solid 1px $sky;
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: box-shadow ease 300ms;
+}
+
+.todo:hover {
+  box-shadow: 5px 5px 5px 3px #eaeaea;
+}
+
+.todo_complete {
+  border: solid 1px $gray;
+  opacity: 0.4;
+  user-select: none;
+}
+
+.todo_complete:hover {
+  box-shadow: none !important;
+}
+
+
+.todo__form-edit {
+  position: absolute;
+  background-color: $sky;
+  border-radius: $borderRadius;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.form-edit-close {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+}
+
+#todo-title {
+  width: 100%;
+}
+
+#todo-description {
+  width: 100%;
+}
+
+
+.todo__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+}
+
+
+.todo__priority_low {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $lowPriority;
+}
+
+.todo__priority_medium {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $mediumPriority;
+}
+
+.todo__priority_high {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $highPriority;
+}
+
+
+.todo__setting {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+  .todo__setting-icon {
+    color: $gray;
+  }
+
+  .todo__setting-icon:hover {
+    color: $grayLight;
+  }
+
+
+  .todo__control {
+    position: absolute;
+    display: none;
+  }
+
+    .todo__control-complete {
+      color: $grayLight;
+      position: absolute;
+      left: -32px;
+      top: -25px;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+    .todo__edit {
+      color: $grayLight;
+      position: absolute;
+      left: -15px;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+    .todo__control-delete {
+      color: $grayLight;
+      position: absolute;
+      top: 12px;
+      left: 10px;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+
+.todo__title {
+  margin: 10% 0;
+  text-align: center;
+  @include MontserratBold(1.5rem, 1.5rem);
+}
+
+
+.todo__author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .todo_author-icon {
+    color: $gray;
+  }
+
+  .todo__author-name {
+    margin-left: 5px;
+    color: $grayLight;
+    @include MontserratNormal(0.65rem, 0.65rem);
+  }
+
+
+.todo__date {
+  display: flex;
+  align-items: center;
+}
+
+  .todo__date-icon {
+    color: $gray;
+  }
+
+  .todo__date-range {
+    margin-left: 5px;
+  }
+
+  .todo__date-start {
+    margin-bottom: 5px;
+  }
+
+  .todo__date-start, .todo__date-end {
+    @include MontserratNormal(0.65rem, 0.65rem);
+    color: $grayLight;
+  }
+
+
+.todo__description {
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 15px;
+}
