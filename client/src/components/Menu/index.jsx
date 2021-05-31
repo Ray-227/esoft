@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import './index.scss';
 
-import Links from '@/components/Links/index.jsx';
-
 
 export default class Menu extends React.Component {
   constructor(props) {
@@ -62,7 +60,6 @@ export default class Menu extends React.Component {
           <div className="col-12" onClick={this.handleClick}>
             <nav className="menu">
               <button className="menu__createBtn">Создать<span className="material-icons-round md-24">alarm_add</span></button>
-              <Links></Links>
               <div className="menu__user"><span className="material-icons-round md-36">account_circle</span>{this.props.user}</div>
             </nav>
 

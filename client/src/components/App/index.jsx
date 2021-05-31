@@ -8,7 +8,7 @@ import { useRoutes } from '@/routes/routes.jsx';
 
 export default class App extends React.Component {
   render() {
-    const routes = useRoutes(false);
+    const routes = useRoutes(true);
     return (
       <Router>
         {routes}
