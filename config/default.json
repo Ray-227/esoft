@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "esoftTodoApp",
+  "mongoUri": "mongodb+srv://admin:ukflbfnjh227@cluster0.ndqvu.mongodb.net/esoft?retryWrites=true&w=majority"
+}
